@@ -1,17 +1,16 @@
-import React from "react";
+import React, { Children } from "react";
+import BookProvider from "./context/bookContext";
+import { Outlet } from "react-router-dom";
 // componets section over here
 import Navbar from "./components/Navbar";
-import Banner from "./components/banner";
 import Footer from "./components/Footer";
-import Card from "./components/Card";
 function App() {
   return (
-    <>
+    <BookProvider props={Children}>
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Outlet />
       <Footer></Footer>
-      <Card></Card>
-    </>
+    </BookProvider>
   );
 }
 

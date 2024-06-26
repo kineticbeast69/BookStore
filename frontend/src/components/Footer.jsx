@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <footer className="footer footer-center p-6 bg-neutral text-primary-content md:p-10 mt-2">
+      <footer className="footer footer-center p-6 bg-neutral text-primary-content md:p-10 mt-6 md:mt-3">
         <aside>
           <p className="font-bold text-base text-orange-700 md:text-3xl lg:text-5xl">
             Kitabh-Store <br />

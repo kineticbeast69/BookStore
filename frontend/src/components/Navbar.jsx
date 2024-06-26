@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import { FaBookOpenReader } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 function Navbar() {
   const [shadow, setShadow] = useState(false);
+  const NavFunction = ({ isActive }) => {
+    return isActive
+      ? "text-base-300 text-blue-500 font-semibold md:text-xl"
+      : "text-base text-white md:text-xl";
+  };
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY > 0) {
@@ -18,7 +24,7 @@ function Navbar() {
   }, [shadow]);
   return (
     <nav
-      className={`mb-2 fixed top-0 left-0 right-0 Z-50 ${
+      className={`mb-2  ${
         shadow
           ? "sticky-navbar shadow-md  duration-300 transition-all ease-in-out "
           : ""
@@ -48,37 +54,53 @@ function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <NavLink to="/" className={NavFunction}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <a>Course</a>
+                <NavLink to="/course" className={NavFunction}>
+                  Course
+                </NavLink>
               </li>
               <li>
-                <a>About</a>
+                <NavLink to="/about" className={NavFunction}>
+                  About
+                </NavLink>
               </li>
               <li>
-                <a>Contact</a>
+                <NavLink to="/contact" className={NavFunction}>
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-sm md:text-3xl">
+          <NavLink to="/" className="btn btn-ghost text-sm md:text-3xl">
             <FaBookOpenReader />
             <div className="logo text-orange-700">Kitabh-Store</div>
-          </a>
+          </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a className="text-base text-white md:text-xl">Home</a>
+              <NavLink to="/" className={NavFunction}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <a className="text-base text-white md:text-xl">Course</a>
+              <NavLink to="/course" className={NavFunction}>
+                Course
+              </NavLink>
             </li>
             <li>
-              <a className="text-base text-white md:text-xl">About</a>
+              <NavLink to="/about" className={NavFunction}>
+                About
+              </NavLink>
             </li>
             <li>
-              <a className="text-base text-white md:text-xl">Contact</a>
+              <NavLink to="/contact" className={NavFunction}>
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -100,9 +122,14 @@ function Navbar() {
               </svg>
             </label>
           </div>
-          <a className="btn btn-warning font-semibold btn-sm text-sm p-o md:text-xl text-black">
-            Login
-          </a>
+          <button
+            className="btn btn-warning"
+            onClick={() => document.getElementById("my_modal_3").showModal()}
+          >
+            <a className=" font-semibold btn-sm text-sm p-o md:text-xl text-black">
+              Login
+            </a>
+          </button>
         </div>
       </div>
     </nav>

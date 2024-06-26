@@ -1,48 +1,43 @@
 export const books = [
   {
     id: 1,
-    name: "book1",
-    title: "book1 title",
+    name: "Programming Book",
+    title: "Eloquent JavaScript, Third Edition",
     price: 0,
     category: "free",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/bookpng.png",
   },
   {
     id: 2,
-    name: "book2",
-    title: "book2 title",
+    name: "Programming Book",
+    title: "Flask Web Development",
     price: 0,
     category: "free",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/bookpng.png",
   },
   {
     id: 3,
-    name: "book3",
-    title: "book3 title",
+    name: "Story Book",
+    title: "The great Gatsby",
     price: 0,
     category: "free",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/bookpng.png",
   },
   {
     id: 4,
-    name: "book4",
-    title: "book4 title",
+    name: "Story Book",
+    title: "Jane Eyre",
     price: 0,
     category: "free",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/bookpng.png",
   },
   {
     id: 5,
-    name: "book5",
-    title: "book5 title",
+    name: "Horror Books",
+    title: "Dracula",
     price: 0,
     category: "free",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/bookpng.png",
   },
   {
     id: 6,
@@ -50,8 +45,7 @@ export const books = [
     title: "book6 title",
     price: 2000,
     category: "premium",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/paid.jpg",
   },
   {
     id: 7,
@@ -59,8 +53,7 @@ export const books = [
     title: "book7 title",
     price: 2000,
     category: "premium",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/paid.jpg",
   },
   {
     id: 8,
@@ -68,8 +61,7 @@ export const books = [
     title: "book8 title",
     price: 2000,
     category: "premium",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/paid.jpg",
   },
   {
     id: 9,
@@ -77,17 +69,15 @@ export const books = [
     title: "book9 title",
     price: 2000,
     category: "premium",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/paid.jpg",
   },
   {
     id: 10,
-    name: "book10",
-    title: "book10 title",
+    name: "Comedy Book",
+    title: "Cold Comfort Farm",
     price: 0,
     category: "free",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/bookpng.png",
   },
   {
     id: 11,
@@ -95,7 +85,6 @@ export const books = [
     title: "book11 title",
     price: 2000,
     category: "premium",
-    image:
-      "https://www.shutterstock.com/image-photo/happy-teachers-day-education-concept-2348176099",
+    image: "images/paid.jpg",
   },
 ];
