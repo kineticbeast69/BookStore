@@ -31,12 +31,12 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/signup",
+        element: <Signup />,
+      },
     ],
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/signup",
-    element: <Signup />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Bookcontext } from "../context/bookContext";
 import { Link } from "react-router-dom";
-
+import LoginModal from "./Loginmodal";
 import CourseCard from "./CourseCard";
 function Course() {
   const booksData = useContext(Bookcontext);
@@ -33,13 +33,14 @@ function Course() {
           <div className="text-center text-2xl py-3 text-orange-600 font-bold  md:py-10 md:text-5xl">
             Premium Books
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-1 px-20 min-h-screen ">
+          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-x-2 gap-y-3 px-20 md:gap-x-4 min-h-screen ">
             {books.map((item) => (
               <CourseCard key={item.id} item={item} />
             ))}
           </div>
         </div>
       </div>
+      <LoginModal></LoginModal>
     </>
   );
 }

@@ -1,7 +1,7 @@
 function CourseCard({ item }) {
   return (
     <>
-      <div className="card bg-green-400 w-56 shadow-xl my-2 md:w-80 hover:scale-105 duration-200">
+      <div className="card bg-green-400 w-56 shadow-xl my-2 md:w-72 hover:scale-90 duration-200">
         <figure className="px-5 pt-4">
           <img src={item.image} alt="Shoes" className="rounded-xl" />
         </figure>

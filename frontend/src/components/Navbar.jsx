@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import { useForm } from "react-hook-form";
 function Navbar() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const [shadow, setShadow] = useState(false);
   const NavFunction = ({ isActive }) => {
     return isActive
